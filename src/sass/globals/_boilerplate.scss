@@ -1,8 +1,6 @@
-//RESPONSIVE BREAKPOINTS
-
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 100%;
 }
 
 *,
@@ -15,16 +13,10 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: whitesmoke;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
+.container-body {
+  min-height: 100vh;
 }
 
 a svg {
