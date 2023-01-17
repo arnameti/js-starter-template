@@ -14,26 +14,26 @@ $breakpoints-down: (
   'large': f.em(1439.98),
 );
 
-@mixin breakpoint-up($size) {
-  @media (min-width: map-get($breakpoints-up, $size)) {
-    @content;
-  }
-}
+// @mixin breakpoint-up($size) {
+//   @media (min-width: map-get($breakpoints-up, $size)) {
+//     @content;
+//   }
+// }
+
+// @mixin breakpoint-down($size) {
+//   @media (max-width: map-get($breakpoints-down, $size)) {
+//     @content;
+//   }
+// }
 
 @mixin breakpoint-down($size) {
-  @media (max-width: map-get($breakpoints-down, $size)) {
+  @media screen and (max-width: f.em($size)) {
     @content;
   }
 }
 
-@mixin breakpoint-down-optional($size) {
-  @media screen and (max-width: $size) {
-    @content;
-  }
-}
-
-@mixin breakpoint-up-optional($size) {
-  @media screen and (min-width: $size) {
+@mixin breakpoint-up($size) {
+  @media screen and (min-width: f.em($size)) {
     @content;
   }
 }
