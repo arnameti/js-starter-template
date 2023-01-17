@@ -25,3 +25,15 @@ $breakpoints-down: (
     @content;
   }
 }
+
+@mixin breakpoint-down-optional($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin breakpoint-up-optional($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
