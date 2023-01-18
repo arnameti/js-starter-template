@@ -14,11 +14,12 @@ a:visited {
   text-decoration: none;
 }
 
-.heading1,
-.heading2,
-.heading3 {
-  font-weight: 700;
-  line-height: 1.1;
+input,
+textarea,
+button,
+select,
+option {
+    font-family: inherit;
 }
 
 // .heading-1 {
